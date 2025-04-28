@@ -28,16 +28,17 @@ The project workflow involved the following key stages:
 **Data Simulation & Preparation:** Generated structured batch-level data reflecting the multi-stage manufacturing process and potential influencing factors using Pandas and NumPy.
 **Data Integration:** Programmatically merged the distinct simulated datasets based on Batch IDs to create a unified analytical dataset, mimicking the process of overcoming real-world data silos.
 **Exploratory Data Analysis (EDA):** Conducted initial analysis using Matplotlib and Seaborn to visualize data distributions (e.g., storage duration) and explore potential relationships between input features and yield indicators.
-**Feature Engineering:** CalculatedStorage_Duration_Daysbased on simulated dates. Processed categorical features (like QC results) into a numerical format suitable for modeling.
+**Feature Engineering:** Calculated Storage_Duration_Days based on simulated dates. Processed categorical features (like QC results) into a numerical format suitable for modeling.
 **Modeling:** Applied predictive regression models from the Scikit-learn library to quantify the relationships between the integrated features and batch yield/success indicators.
 **Model Evaluation & Interpretation:** Assessed model fit and extracted feature importances to understand key drivers, particularly validating the significance of storage duration.
 **Conclusion:** Summarized findings and related them back to potential operational improvements.
-*(Add Link to Notebook: [Analysis Notebook](Your_Project1_Notebook_Filename.ipynb))*
+[Analysis Notebook](Project_1_Contact_Lens_Failure_Analysis.ipynb)
+
 ## 6. Key Findings & Results
 
-**Storage Duration is Critical:** The analysis, primarily through model feature importances, strongly confirmed that theStorage_Duration_Daysfor filled moulds prior to delensing is the most significant predictor of batch yield/success in this simulated process.
+**Storage Duration is Critical:** The analysis, primarily through model feature importances, strongly confirmed that the Storage_Duration_Days for filled moulds prior to delensing is the most significant predictor of batch yield/success in this simulated process.
 **Risk Threshold Identified:** Batches stored for longer durations, particularly those exceeding approximately **6 months (180 days)**, showed a markedly higher association with failure/lower yield within the model.
-**Upstream Factors:** While less dominant than storage time in this analysis, upstream variables like simulated Mould Dimension QC results also showed some predictive value, indicating their contribution to the overall outcome. *(Consider embedding a key visualization if available, e.g., a simplified bar chart showing feature importances with Storage Duration clearly dominant)*
+**Upstream Factors:** While less dominant than storage time in this analysis, upstream variables like simulated Mould Dimension QC results also showed some predictive value, indicating their contribution to the overall outcome.
 ## 7. Conclusions & Business Impact
 
 The primary conclusion from this analysis is that managing the **storage duration** of filled moulds before delensing represents a critical opportunity for improving yield and reducing waste in this specific manufacturing context. The findings provide strong, data-driven justification for implementing or reinforcing operational strategies such as:

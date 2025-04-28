@@ -64,4 +64,4 @@ Git / GitHub (for version control and project hosting)
 **Validation with Real Data:** Apply this analytical pipeline to actual historical production data.
 **Quantify Financial Impact:** If validated, estimate potential cost savings and yield improvements from optimized storage strategies.
 **Explore Secondary Factors:** Conduct deeper analysis into secondary factors identified by the model using real data.
-**Refine Simulation:** Enhance simulation with more granularity if real data remains inaccessible
+**Refine Simulation:** Enhance simulation with more granularity if real data remains inaccessible.
